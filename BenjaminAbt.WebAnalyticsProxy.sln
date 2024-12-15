@@ -17,10 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{02EA681E-C7D8-13
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAnalyticsProxy", "src\WebAnalyticsProxy\WebAnalyticsProxy.csproj", "{A6C5227D-5409-4A0E-9F95-364B835F0357}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{0A4F0798-ED98-495A-B9B2-B11356A249CC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppSample", "samples\WebAppSample\WebAppSample.csproj", "{74D8DD6E-AD05-9C84-0CF3-4A4E81710ECC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAnalyticsProxy.UnitTests", "tests\WebAnalyticsProxy.UnitTests\WebAnalyticsProxy.UnitTests.csproj", "{058C0D3B-2218-7801-A8B1-386BE96B0A2B}"
 EndProject
 Global
@@ -33,10 +29,6 @@ Global
 		{A6C5227D-5409-4A0E-9F95-364B835F0357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C5227D-5409-4A0E-9F95-364B835F0357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6C5227D-5409-4A0E-9F95-364B835F0357}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74D8DD6E-AD05-9C84-0CF3-4A4E81710ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74D8DD6E-AD05-9C84-0CF3-4A4E81710ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74D8DD6E-AD05-9C84-0CF3-4A4E81710ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74D8DD6E-AD05-9C84-0CF3-4A4E81710ECC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{058C0D3B-2218-7801-A8B1-386BE96B0A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{058C0D3B-2218-7801-A8B1-386BE96B0A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{058C0D3B-2218-7801-A8B1-386BE96B0A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,9 +36,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{74D8DD6E-AD05-9C84-0CF3-4A4E81710ECC} = {0A4F0798-ED98-495A-B9B2-B11356A249CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D30D0D8D-7A39-4AB9-B210-935A47D003B5}
