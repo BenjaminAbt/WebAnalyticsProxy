@@ -1,0 +1,55 @@
+<Project>
+    <PropertyGroup>
+        <Company>Benjamin Abt</Company>
+        <Authors>Benjamin Abt, SchwabenCode</Authors>
+        <Product>BenjaminAbt.WebAnalyticsProxy</Product>
+        <Copyright>Benjamin Abt</Copyright>
+        <Title>WebAnalyticsProxy - Proxy your Web Analytics</Title>
+        <Description>
+            WebAnalyticsProxy helps to ensure that client-side tracking is no longer prevented by adblockers, but can be routed through your own backend.
+        </Description>
+        <DefaultLanguage>en-US</DefaultLanguage>
+        <NoPackageAnalysis>true</NoPackageAnalysis>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Env">
+        <IsTestProject>$(MSBuildProjectName.Contains('Test'))</IsTestProject>
+        <IsBenchmarkProject>$(MsBuildProjectName.Contains('Benchmark'))</IsBenchmarkProject>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Assembly">
+        <RootNamespace>BenjaminAbt.$(MSBuildProjectName)</RootNamespace>
+        <AssemblyName>BenjaminAbt.$(MSBuildProjectName)</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Project Defaults">
+        <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package">
+        <IsPackable>false</IsPackable>
+        <PackageProjectUrl>https://github.com/BenjaminAbt/WebAnalyticsProxy</PackageProjectUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <Description>WebAnalyticsProxy helps to ensure that client-side tracking is no longer prevented by adblockers, but can be routed through your own backend.</Description>
+        <MinClientVersion>2.12</MinClientVersion>
+        <PackageTags>Cloudflare, WebAnalytics, Proxy</PackageTags>
+        <IsPackable>false</IsPackable>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    </PropertyGroup>
+
+    <PropertyGroup Label="C#">
+        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)BenjaminAbt.WebAnalyticsProxy.snk</AssemblyOriginatorKeyFile>
+        <PublicKey>
+            00240000048000009400000006020000002400005253413100040000010001002950a2c796e2e995843e86e628eb5561402fa021118e7fa8079978a6c2e0e3f018993b9c02577f8e7a82247e7b498fbf0b6dc7c96f0b699489dae9d88540cfeccff27c0b62680046a7a4dad3587e3326533299de86979d6cb7ef5a5253e4a00a890c65bef589280eb99f32213297161ef8e7a4aba1b7a35f9239754d170b5bcc
+        </PublicKey>
+    </PropertyGroup>
+</Project>
