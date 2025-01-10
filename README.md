@@ -101,7 +101,7 @@ public class TrackController : Controller
 }
 ```
 
-Im Fall von Cloudflare muss nun noch dem HTML-Snippet hinzugefügt werden, wie der Tracking Proxy-Endpunkt lautet:
+In the case of Cloudflare, the tracking proxy endpoint must now be added to the HTML snippet:
 
 ```csharp
 // Razor View, e.g. Layout.cshtml
